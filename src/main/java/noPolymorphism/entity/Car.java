@@ -1,6 +1,11 @@
 package noPolymorphism.entity;
 
+import lombok.AllArgsConstructor;
+
+@AllArgsConstructor
 public class Car {
+    private final int Id;
+
     public void goForward(){
         System.out.println("Car forward");
     }
