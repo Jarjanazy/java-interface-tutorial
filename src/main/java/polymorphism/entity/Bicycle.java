@@ -1,6 +1,10 @@
 package polymorphism.entity;
 
+import lombok.AllArgsConstructor;
+
+@AllArgsConstructor
 public class Bicycle implements Transport{
+    private final int id;
 
     public void goForward() {
         System.out.println("Bike forward");

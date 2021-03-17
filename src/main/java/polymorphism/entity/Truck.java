@@ -1,7 +1,10 @@
 package polymorphism.entity;
 
-public class Truck implements Vehicle{
+import lombok.AllArgsConstructor;
 
+@AllArgsConstructor
+public class Truck implements Vehicle{
+    private final int id;
     public void checkEngine() {
         System.out.println("Checking Truck engine");
     }
